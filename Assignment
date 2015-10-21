@@ -1,0 +1,19 @@
+1)A class in C++ is a user defined type or data structure declared with keyword class that has data and functions (also called methods) as its members whose access is governed by the three access specifiers private, protected or public (by default access to members of a class is private). A class (declared with keyword class) in C++ differs from a structure (declared with keyword struct) as by default, members are private in a class while they are public in a structure. The private members are not accessible outside the class; they can be accessed only through methods of the class. The public members form an interface to the class and are accessible outside the class. Instances of these data types are known as objects and can contain member variables, constants, member functions, and overloaded operators defined by the programmer.
+2)abstraction is the crucial
+step of representing information in terms of its interface with the user.That is, you
+abstract the essential operational features of a problem and express a solution in those
+terms. From abstraction, it is a short step to the user-defined type,
+which in C++ is a class design that implements the abstract interface.
+3)A class defines the properties and behavior for the objects represented by the abstraction. Abstraction is a property of object oriented programming. It denotes the essential properties and behaviors of an object. It hides code and data. A class thus denotes a category of objects and act as a blueprint for creating such objects. An object exhibits the property and behaviors defined by its class. Generally, an object is an instance of a class.
+6)C++ uses a class constructor whenever you create an object of that class, even when
+you use new for dynamic memory allocation.
+When should a destructor be called? The compiler handles this decision; normally your
+code shouldn’t explicitly call a destructor
+8) the default constructor for a class as a constructor that can be called with no arguments (this includes a constructor whose parameters all have default arguments)
+The constructor is the way to have every object determine its initial value. When you create a new object in C++, initially all of its data members have a completely indeterminate value. If you want to have the object determine its own default, it needs to have some code to execute in order to set its fields to meaningful values. So in short, yes, objects should determine their initial values, and the constructor is the way to do it. They're invoked automatically, and so from a client's perspective there's no need to explicitly invoke any initialization routines. The constructor does this automatically.
+As for the default constructor, it can and often does have code in it that makes it very different from nothing. A vector constructor, for example, might set up a pointer to a small buffer where the elements can be stored, as well as recording the size of the object as zero. Doing nothing would leave the pointer pointing somewhere randomly in memory and with the size fields set to garbage, violating the class invariants and rendering the object unusable
+10)this is the address of the
+object.You want to return the object itself, and that is symbolized by *this. (Recall that
+applying the dereferencing operator * to a pointer yields the value to which the pointer
+points.)
+
