@@ -17,3 +17,4 @@ object.You want to return the object itself, and that is symbolized by *this. (R
 applying the dereferencing operator * to a pointer yields the value to which the pointer
 points.)
 
+.
